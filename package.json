@@ -1,0 +1,35 @@
+{
+  "name": "sass2less",
+  "version": "0.0.9",
+  "description": "Convert SASS (SCSS) to Less",
+  "main": "index.js",
+  "files": [
+    "replacements"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">= 6.9.0"
+  },
+  "peerDependencies": {
+    "webpack": "^3.0.0 || ^4.0.0"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "sasscss",
+    "less",
+    "lesscss",
+    "less.js",
+    "sass2less",
+    "loader",
+    "converter",
+    "webpack",
+    "ant",
+    "antd",
+    "ant-design"
+  ],
+  "author": "mucluck",
+  "license": "MIT"
+}
