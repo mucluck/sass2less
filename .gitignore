@@ -1,0 +1,19 @@
+node_modules
+
+# === Mac ===
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# === Vim ===
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+# === Webstorm ===
+.idea
+
+lib/
