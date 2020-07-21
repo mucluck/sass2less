@@ -47,7 +47,7 @@ function convert(filePath) {
     info(`Processing: ${filePath}`);
 
     const buffer = fs.readFileSync(filePath);
-    const output = less2sass.convert(buffer.toString());
+    const output = sass2less.convert(buffer.toString());
     const newPath = filePath.replace(sassRegex, ".less");
 
     write(newPath, output);
