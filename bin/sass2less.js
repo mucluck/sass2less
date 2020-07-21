@@ -3,7 +3,6 @@
 const program = require("commander");
 const path = require("path");
 const fs = require("fs");
-const mkdir = require("mkdirp").sync;
 const chalk = require("chalk");
 
 const sass2less = require("..");
@@ -47,7 +46,7 @@ function convert(filePath) {
     info(`Processing: ${filePath}`);
 
     const buffer = fs.readFileSync(filePath);
-    const output = sass2less.convert(buffer.toString());
+    const output = sass2less(buffer.toString());
     const newPath = filePath.replace(sassRegex, ".less");
 
     write(newPath, output);
