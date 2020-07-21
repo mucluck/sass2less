@@ -8,7 +8,7 @@ const chalk = require("chalk");
 
 const sass2less = require("..");
 
-csont sassRegex = /\.s[ac]ss$/i;
+const sassRegex = /\.s[ac]ss$/i;
 
 /**
  * Helpers.
@@ -66,9 +66,7 @@ program.version(require("../package.json").version).usage("<SASS/SCSS file>");
 program.on("--help", function () {
     console.log("Commands:");
     console.log();
-    console.log(
-        "sass2less <SASS/SCSS file> converts the less file to less.\n"
-    );
+    console.log("sass2less <SASS/SCSS file> converts the less file to less.\n");
     console.log();
 });
 
@@ -100,7 +98,7 @@ function read(filePath) {
     } else if (stats.isDirectory()) {
         const files = fs.readdirSync(fullPath);
 
-        files.forEach(file => read(path.join(fullPath, file)));
+        files.forEach((file) => read(path.join(fullPath, file)));
     }
 }
 
