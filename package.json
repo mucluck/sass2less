@@ -1,6 +1,6 @@
 {
 	"name": "sass2less",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Convert SASS (SCSS) to Less",
 	"main": "index.js",
 	"files": [
